@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h2>Factorial Calculator</h2>
+
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="fact()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function fact() {
+    let n = Number(document.getElementById("num").value);
+    let f = 1;
+
+    for (let i = 1; i <= n; i++) {
+        f = f * i;
+    }
+
+    document.getElementById("result").innerHTML = f;
+}
+</script>
+
+</body>
+</html>
