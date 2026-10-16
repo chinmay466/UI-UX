@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Program 3: Feedback Form
+     Create a feedback form with a name, email and password input, a checkbox group for the
+     emotions that apply, a radio group for the satisfaction level, a textarea for comments,
+     a file input to upload a bio photo, and a dropdown to select the location visited.
+     Mark the mandatory fields as required and add a submit button. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <form action="" req>
+        Name: <input type="text" name="Name" placeholder="Enter your name" required><br>
+        Email: <input type="text" name="email" placeholder="name@example.com" required><br>
+        Password: <input type="password" placeholder="Enter your password" required><br>
+        <br>
+        Please check all the emotions that apply to you:
+        <ul >
+            <li>Angry <input type="checkbox"></li>
+            <li>Sad <input type="checkbox"></li>
+            <li>Happy <input type="checkbox"></li>
+            <li>Ambivalent <input type="checkbox"></li>
+        </ul>
+        How satisfied are you with our service?
+        <ul>
+            <li>Very satisfied <input type="radio" name="service" required></li>
+            <li>Satisfied <input type="radio" name="service"></li>
+            <li>Didn't care <input type="radio" name="service"></li>
+            <li>Dissatisfied <input type="radio" name="service"></li>
+            <li>Very dissatisfied <input type="radio" name="service"></li>
+        </ul>
+        Further comments:
+        <textarea name="Comments" id="Comments"></textarea><br><br>
+        Bio photo: <input type="file" name="BioPhoto" accept="image/*" required><br>
+        Location visited: <select name="LocationVisited" required>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            </select><br>
+        <br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+</body>
+</html>
