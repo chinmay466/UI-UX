@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <script>
+        function submitinfo(){
+            if(qz.log.value=="")
+                alert("enter login name");
+            else if(qz.pass.value=="")
+                alert("enter password: ");
+            }
+        
+    </script>
+</head>
+<body bgcolor="red"><pre>
+    <form name="qz">
+        Welcome to <h1>Nisaki Technologies</h1>
+  
+        <hr>
+        Login name: <input type="text" name="log" value="">
+        Password: <input type="password" name="pass" value="">
+        <input type="button" value="submit" onclick="submitinfo()">
+        <input type="reset" name="reset" value="reset">
+    </form>
+</pre>
+</body>
+</html>
