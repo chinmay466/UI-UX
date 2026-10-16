@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Class TimeTable</title>
+        <style>
+            td {
+                text-align: center;
+            }
+            th {
+                background-color:lightgray;
+            }
+            .break{
+                writing-mode: vertical-lr;
+                background-color: lightgray;
+            }
+            .day{
+                background-color: lightgray;
+            }
+            .img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://nitte.edu.in/nipe/img/logo.png" alt="Nitte Institute of Professional Education Logo">
+        <h1 align="center">Class TimeTable</h1>
+        <!--- Important for all exams --->
+        <table border="2" cellspacing="0" cellpadding="10" border-collapse="collapse" margin="20px auto" align="center">
+            <tr>
+                <th> Day </th>
+                <th>9:30 - 10:20</th>
+                <th>10:20 - 11:10</th>
+                <th>11:10 - 11:20</th>
+                <th>11:20 - 12:10</th>
+                <th>12:10 - 1:00</th>
+                <th>1:00 - 1:50</th>
+                <th>1:50 - 2:40</th>
+                <th>2:40 - 3:30</th>
+            </tr>
+            <tr>
+                <td class="day">Monday </td>
+                <td colspan="2">UX/UI Design / SE Lab / M-M Session</td>
+                <td rowspan="5" class="break" >Short Break</td>
+                <td colspan="2"> EH&PT / DF Lab</td>
+                <td rowspan="5" class="break"> Lunch </td>
+                <td> AR </td>
+                <td> EVS </td>
+            </tr>
+            <tr>
+                <td class="day">Tuesday </td>
+                <td colspan="2">UX/UI Design / SE Lab / M-M Session</td>
+                <td> OS </td>
+                <td> UX/UI Design </td>
+                <td colspan="2"> DL(AI) - CND(Cloud)</td>
+            </tr>
+            <tr>
+                <td class="day">Wednesday </td>
+                <td> SPZ 2 </td>
+                <td> SE </td>
+                <td> OS </td>
+                <td> UX/UI Design </td>
+                <td colspan="2"> CV(AI) - CE(Cloud) </td>
+            </tr>
+            <tr>
+                <td class="day">Thursday </td>
+                <td> UX/UI Design </td>
+                <td> SPZ 1 </td>
+                <td colspan="2"> EH&PT / DF Lab</td>
+                <td> SPZ 2 </td>
+                <td> AR </td>
+            </tr>
+            <tr>
+                <td class="day">Friday </td>
+                <td> SPZ 1 </td>
+                <td> SPZ 2 </td>
+                <td colspan="2">UX/UI Design / SE Lab / M-M Session</td>
+                <td> OS </td>
+                <td> SPZ 1 </td>
+            </tr>
+        </table>
+    </body>
+</HTML>
